@@ -1,0 +1,15 @@
+0-admin
+.vscode
+cours
+**/v0
+**/tests
+daily*.md
+**/.env
+**/node_modules
+**/config
+**/*.key
+**/*.crt
+**/*.pem
+**/udp
+**/countries.json
+exercices/corrections/*
