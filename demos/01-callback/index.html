@@ -11,30 +11,7 @@
   <button id="btn-1">Bouton 1 cliquez-moi</button>
   <button id="btn-2">Bouton 2 cliquez-moi</button>
   <button id="btn-3">Bouton 3 cliquez-moi</button>
-  <script>
-    const btn1 = document.querySelector('#btn-1')
-    const btn2 = document.querySelector('#btn-2')
-    const btn3 = document.querySelector('#btn-3')
-    if (btn1) {
-      // Callback function non nommé, utilisable qu'une seule fois
-      btn1.addEventListener('click', function () {
-        console.log('j\'ai cliqué')
-      })
-    }
-
-    if (btn2) {
-      // Callback nommée qu'on peut utiliser plusieurs fois (dans d'autres événements par exemple)
-      btn2.addEventListener('click', sayHello)
-    }
-
-    if (btn3) {
-      btn3.addEventListener('dblclick', sayHello)
-    }
-
-    function sayHello() {
-      console.log('hello')
-    }
-  </script>
+  <script src="index.mjs" type="module"></script>
 </body>
 
 </html>
