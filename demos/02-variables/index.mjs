@@ -12,5 +12,5 @@ console.log('villes avant', cities)
 cities.push('Lyon')
 console.log('villes après', cities)
 const lastname = 'Tshimini'
-lastname = 'Guérin' // pas possible
+lastname = 'Guérin' // pas possible provoque une erreur
 
