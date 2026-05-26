@@ -6,19 +6,12 @@
 
 [Validation des acquis 1/2 journée](https://docs.google.com/forms/d/e/1FAIpQLScokqKsGeLXY45A3SQe7fHS8XagsNQ1spNaw52xT2Nrvv94Ng/viewform)
 
-<!-- ## Erreur de sécurité sur Windows
+## Erreur de sécurité sur Windows
 
 Exécutez la commande suivante
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
-``` -->
-
----
-
-## Cours
-
-- [PDF du cours à récupérer](https://drive.google.com/file/d/15FbxBfu3h29rC8VSH4RVbGCe1xNg6s7A/view?usp=sharing)
-
+```
 ---
 
 ## Exercices
