@@ -27,13 +27,13 @@ npm init @eslint/config@latest
 - Where does your project run ? ***"Node"***
 - Would you like to install them now ? ***"yes"***
 - Which package manager do you want to use ? ***"npm"***
-3. Installations des modules vite typescript et concurrently pour tous les environnements
+3. Installation du module concurrently pour tous les environnements
 
 ```bash
-npm i vite concurrently
+npm i concurrently
 ```
 
-4. Installations des modules vitest Cypress et Autocannon uniquement en environnement de développement
+4. Installations des modules vitest Cypress et Typescript uniquement en environnement de développement
 
 ```bash
 npm i -D vitest cypress typescript
