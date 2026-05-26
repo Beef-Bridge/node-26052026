@@ -17,7 +17,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 ## Cours
 
-- [PDF du cours à récupérer]()
+- [PDF du cours à récupérer](https://drive.google.com/file/d/15FbxBfu3h29rC8VSH4RVbGCe1xNg6s7A/view?usp=sharing)
 
 ---
 
