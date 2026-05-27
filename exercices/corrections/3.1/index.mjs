@@ -1,8 +1,8 @@
 import { readFile } from "node:fs";
 import { writeFile } from "node:fs/promises";
-import { CONTENT } from "./data.mjs";
+import { HTML } from "./data.mjs";
 
-await writeFile("index.html", CONTENT)
+await writeFile("index.html", HTML)
   .then(() => console.log("écriture OK"))
   .catch((err) => console.error("Can't write index.html", err));
 

@@ -1,4 +1,4 @@
-export const CONTENT = `<!DOCTYPE html>
+export const HTML = `<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
