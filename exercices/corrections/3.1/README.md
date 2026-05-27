@@ -2,8 +2,18 @@
 
 ## Lancement du projet
 
+### Sans le Bonus
+
 ```js
 npm run start
 ```
-[Correction JS](./index.mjs)
-[Alternatif JS](./index-alternatively.mjs)
+### Avec le Bonus
+
+```js
+npm run bonus
+```
+
+## Contenu JS
+
+[Correction sans bonus](./index.mjs)
+[Correction avec bonus](./bonus.mjs)
