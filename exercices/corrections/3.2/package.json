@@ -1,0 +1,14 @@
+{
+  "name": "3.2",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "dev": "node --watch index.mjs",
+    "bonus": "node --watch index.mjs bonus"
+  },
+  "keywords": [],
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "description": "Exercise 3.2 readline"
+}
