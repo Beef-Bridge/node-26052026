@@ -1,6 +1,10 @@
 import { readFileSync } from "node:fs";
 import { createServer } from "node:https";
 
+/**
+ * Certif à générer cf. exo 3.4 pour générer les certifs depuis un site externe ou la commande openssl
+ * @see https://github.com/glo10/node-26052026/blob/main/exercices/3.4.md
+*/
 const options = {
   key: readFileSync('certifs/private.pem'),
   cert: readFileSync('certifs/certificate.crt')
