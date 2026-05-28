@@ -8,10 +8,11 @@ function checkLoginMiddleware(req, res, next) {
 }
 
 function anotherMiddleware(req, res, next) {
+    // passe partout juste pour montrer qu'il peut y avoir plusieurs middlewares pour une route donnée
     next()
 }
 
-// match avec la route /github
+// match avec la route GET /github, cette racine de la route est défini dans app.js au moment ou on utilise ce router
 router.get('/', anotherMiddleware, (req, res) => {
     fetch('https://api.github.com/users')
     .then(res => res.json())
@@ -20,7 +21,6 @@ router.get('/', anotherMiddleware, (req, res) => {
         res.render('users/list', { users })
     })
     .catch(() => res.render('error', { message: 'Aucun utilisateur', status: 500 }))
- // callback qui s'exécute sur cette route quand un utilisateur fera une req GET /users-github
 })
 
 // match avec GET /github/:login avec login dynamique
