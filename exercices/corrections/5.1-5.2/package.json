@@ -1,0 +1,24 @@
+{
+  "name": "ex8-9-pug",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "e2e": "cypress open",
+    "start": "npm i & npm update & node ./bin/www",
+    "start:w": "SET DEBUG=ex8-9:* & node --watch  --watch-preserve-output --watch-path=routes --watch-path=views --watch-path=controllers ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "type": "commonjs",
+  "description": "PS : le projet a été initilisé au départ avec la commande `express --view=pug ex8-9`.",
+  "main": "app.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
