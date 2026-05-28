@@ -18,8 +18,18 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// pour accéder depuis le client aux images qui se trouvent dans
+// le dossier /public/images => http://localhost:PORT/images
+/**
+ * avec commonJS
+ * Il y a 2 variables qui donne le chemin absolue du dossier racine et du fichier en cours
+ *  __dirname
+ *  __filename
+ * Parallèle avec EcmaScript
+ * __dirname => import.meta.dirname
+ * __filename => import.meta.filename
+ */
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/github', usersGithubRouter)
