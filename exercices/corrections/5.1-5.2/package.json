@@ -1,11 +1,11 @@
 {
-  "name": "ex8-9-pug",
+  "name": "5.1-5.2-pug",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "e2e": "cypress open",
     "start": "npm i & npm update & node ./bin/www",
-    "start:w": "SET DEBUG=ex8-9:* & node --watch  --watch-preserve-output --watch-path=routes --watch-path=views --watch-path=controllers ./bin/www"
+    "dev": "SET DEBUG=5.1-5.2_pug:* & node --watch ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -16,7 +16,7 @@
     "pug": "2.0.0-beta11"
   },
   "type": "commonjs",
-  "description": "PS : le projet a été initilisé au départ avec la commande `express --view=pug ex8-9`.",
+  "description": "Projet a été initialisé au départ avec la commande `express --view=pug 5.1-5.2`.",
   "main": "app.js",
   "keywords": [],
   "author": "",

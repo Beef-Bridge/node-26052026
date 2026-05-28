@@ -1,4 +1,4 @@
-# Correction exercice 12 : Mocha
+# Correction 7.1 :  Vitest
 
 ## Installation et lancement des tests
 

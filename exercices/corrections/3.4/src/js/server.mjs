@@ -11,9 +11,9 @@ const PORT = 8034;
 createServer(options, (req, res) => {
   const { url, method } = req
   if (method.toUpperCase() === 'GET' && url === "/") {
-      render(res, `${pages}/index.html`)
+      render(`${pages}/index.html`, res)
   } else {
-    renderPromisify(res, `${pages}/404.html`, 404)
+    renderPromisify(`${pages}/404.html`, res, 404)
   }
 }).listen(PORT, () => {
   info(`Listen on https://localhost:${PORT}`);

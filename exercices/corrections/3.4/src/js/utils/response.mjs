@@ -2,6 +2,7 @@ import { createReadStream, access, constants } from "node:fs";
 import { join } from "node:path";
 import { paths } from "./paths.mjs";
 import { pipeline } from "node:stream";
+import { promisify } from "node:util";
 const { pages, pagesBonus } = paths;
 /**
  * Server response
@@ -28,7 +29,7 @@ export const render = (filename, res, headers = {}) => {
   });
 };
 
-export const renderPromisify = async (res, page, status = 200) => {
+export const renderPromisify = async (page, res, status = 200) => {
   // Transforme l'implémentation de la callback de pipeline() en promesse
   const pipelineAsync = promisify(pipeline);
   res.writeHead(status, { "Content-Type": "text/html; charset=utf-8" });
