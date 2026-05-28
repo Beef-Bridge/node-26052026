@@ -1,0 +1,23 @@
+{
+  "name": "3.4",
+  "version": "1.0.0",
+  "description": "Exercise Web HTTPS server with HTML",
+  "main": "src/js/server.mjs",
+  "scripts": {
+    "start": "npm i & npm update & node src/js/server.mjs",
+    "bonus": "npm i & npm update & node src/js/bonus.mjs",
+    "dev": "npm i & npm update & node --watch src/js/server.mjs",
+    "bonus:dev": "npm i & npm update & node --watch src/js/bonus.mjs",
+    "start:all": "concurrently -n server,bonus -c blue,green \"npm run start\" \"npm run bonus\"",
+    "dev:all": "concurrently -n server,bonus -c blue,green \"npm run dev\" \"npm run bonus:dev\""
+  },
+  "keywords": [],
+  "author": "Glodie Tshimini",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0"
+  }
+}
