@@ -6,6 +6,8 @@ export default defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'http://localhost:3888',
-    specPattern: 'cypress/e2e/app/*.cy.{js,mjs,jsx,ts,tsx}'
+    specPattern: 'cypress/**/*.cy.{js,mjs,jsx,ts,tsx}',
+        supportFile: false
+
   },
 });
